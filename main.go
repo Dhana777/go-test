@@ -31,7 +31,7 @@ type User struct {
 
 func main() {
 	// Connect to MySQL database
-	dsn := "root:Sainath@2000@tcp(127.0.0.1:3306)/testdata"
+	dsn := "root:password@tcp(127.0.0.1:3306)/testdata"
 
 	var err error
 	db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
